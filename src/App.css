@@ -5,38 +5,69 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-.card {
-  padding: 2em;
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 300px;
 }
 
-.read-the-docs {
-  color: #888;
+.expense-form input,
+.expense-form select,
+.expense-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.expense-form button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.expense-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.expense-table th,
+.expense-table td {
+  border: 1px solid white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.expense-table th {
+  cursor: pointer;
+  background-color: darkgrey;
 }
