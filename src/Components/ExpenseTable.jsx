@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExpenseTable = ({ expenses, onDelete, onSort, sortField }) => {
   const renderSortIndicator = (field) => {
-    return sortField === field ? ' 🔽' : '';
+    return sortField === field ? '' : '';
   };
 
   return (
